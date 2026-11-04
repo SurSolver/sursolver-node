@@ -1,0 +1,64 @@
+{
+  "name": "sursolver",
+  "version": "0.1.0",
+  "description": "Official Node.js and TypeScript captcha solver API client for reCAPTCHA v3, Cloudflare Turnstile, Cloudflare Challenge, GeeTest, DataDome, AWS WAF, Akamai, Kasada and image captchas.",
+  "license": "MIT",
+  "author": "SurSolver",
+  "homepage": "https://sursolver.com/docs/api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sursolver/sursolver-node.git"
+  },
+  "bugs": "https://github.com/sursolver/sursolver-node/issues",
+  "keywords": [
+    "sursolver",
+    "captcha",
+    "captcha-solver",
+    "recaptcha",
+    "recaptcha-v3",
+    "turnstile",
+    "cloudflare",
+    "cf-clearance",
+    "geetest",
+    "datadome",
+    "aws-waf",
+    "akamai",
+    "kasada",
+    "image-captcha",
+    "typescript"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "sideEffects": false,
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "smoke": "node scripts/smoke.mjs",
+    "prepack": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
