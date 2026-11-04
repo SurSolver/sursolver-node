@@ -1,6 +1,6 @@
 {
   "name": "sursolver",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official Node.js and TypeScript captcha solver API client for reCAPTCHA v3, Cloudflare Turnstile, Cloudflare Challenge, GeeTest, DataDome, AWS WAF, Akamai, Kasada and image captchas.",
   "license": "MIT",
   "author": "SurSolver",
@@ -48,7 +48,12 @@
     },
     "./package.json": "./package.json"
   },
-  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "node scripts/build.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",

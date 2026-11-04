@@ -1,6 +1,11 @@
 # Changelog
 
-## 0.1.0 — unreleased
+## 0.1.1 — 2026-11-04
+
+- Published from GitHub Actions through npm trusted publishing, with signed provenance linking the
+  package to its source commit (`npm audit signatures`). No API changes.
+
+## 0.1.0 — 2026-11-04
 
 First release. Tested against the SDK specification revision in `SPEC_VERSION` (catalog of
 2026-11-04).
